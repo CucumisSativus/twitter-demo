@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: net.cucumbersome
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [annotation-api, app-name, data, data-jdbc, flyway, gradle, h2, http-client, jdbc-hikari, junit, kotlin, kotlin-application, kotlin-build, kotlin-extension-functions, logback, micronaut-build, netty-server, readme, serialization-jackson, shade, testcontainers, yaml]
