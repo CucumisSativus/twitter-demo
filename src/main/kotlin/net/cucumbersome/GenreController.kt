@@ -14,6 +14,8 @@ import io.micronaut.http.annotation.Put
 import io.micronaut.http.annotation.Status
 import io.micronaut.scheduling.TaskExecutors
 import io.micronaut.scheduling.annotation.ExecuteOn
+import io.micronaut.security.annotation.Secured
+import io.micronaut.security.rules.SecurityRule
 import net.cucumbersome.twitterdemo.GenreRepository
 import net.cucumbersome.twitterdemo.GenreUpdateCommand
 import net.cucumbersome.twitterdemo.domain.Genre
@@ -24,6 +26,7 @@ import javax.validation.constraints.NotBlank
 
 @ExecuteOn(TaskExecutors.IO)
 @Controller("/genres")
+@Secured(SecurityRule.IS_AUTHENTICATED)
 open class GenreController(private val genreRepository: GenreRepository) {
 
 

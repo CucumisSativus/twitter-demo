@@ -34,6 +34,15 @@ dependencies {
     testImplementation("org.testcontainers:testcontainers")
     implementation("io.micronaut:micronaut-validation")
 
+
+    implementation("io.micronaut.reactor:micronaut-reactor")
+
+
+
+
+    annotationProcessor("io.micronaut.security:micronaut-security-annotations")
+    implementation("io.micronaut.security:micronaut-security-jwt")
+
     runtimeOnly("com.fasterxml.jackson.module:jackson-module-kotlin")
 
 }
