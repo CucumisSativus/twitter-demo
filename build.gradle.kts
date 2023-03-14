@@ -1,7 +1,7 @@
 plugins {
-    id("org.jetbrains.kotlin.jvm") version "1.6.21"
-    id("org.jetbrains.kotlin.kapt") version "1.6.21"
-    id("org.jetbrains.kotlin.plugin.allopen") version "1.6.21"
+    id("org.jetbrains.kotlin.jvm") version "1.7.21"
+    id("org.jetbrains.kotlin.kapt") version "1.7.21"
+    id("org.jetbrains.kotlin.plugin.allopen") version "1.7.21"
     id("com.github.johnrengelman.shadow") version "7.1.2"
     id("io.micronaut.application") version "3.7.4"
 }
@@ -29,7 +29,7 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect:${kotlinVersion}")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:${kotlinVersion}")
     runtimeOnly("ch.qos.logback:logback-classic")
-    runtimeOnly("com.h2database:h2")
+    runtimeOnly("org.postgresql:postgresql")
     testImplementation("org.testcontainers:junit-jupiter")
     testImplementation("org.testcontainers:testcontainers")
     implementation("io.micronaut:micronaut-validation")
